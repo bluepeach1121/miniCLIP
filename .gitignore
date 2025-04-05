@@ -1,0 +1,6 @@
+flickr30k-images/
+__MACOSX/
+flickr_annotations_30k.csv
+__pycache__/
+*.pyc
+.DS_Store
