@@ -1,6 +1,6 @@
-# MiniCLIP: A Documentation
+# MiniCLIP: A Documentation (built in collaboration with OPENAI's o3-mini)
 
-This repository demonstrates the development of a miniature version of OpenAI's [CLIP](https://github.com/openai/CLIP) model, leveraging a smaller dataset (Flickr30k) and more moderate compute. We incorporate several modern innovations including:
+This repository demonstrates the development of a miniature version of OpenAI's [CLIP](https://github.com/openai/CLIP) model, leveraging a smaller dataset (Flickr30k) and more moderate compute. We incorporate several modern innovations, including:
 
 - **ResNet-34** image encoder, rather than a huge ResNet-50/101 or ViT.
 - **Linformer**-based text encoder with Byte-Pair Encoding (BPE) or Hugging Face tokenization.
@@ -22,7 +22,7 @@ This repository demonstrates the development of a miniature version of OpenAI's 
 
 ## 1. Overview
 
-OpenAI's CLIP is a powerful multi-modal model trained on 400M (image, text) pairs, which is significantly large in both data size and compute. This repository aims to **scale down** those ideas for smaller academic or personal projects using Flickr30k. We still follow the same core principle:
+OpenAI's CLIP is a powerful  model trained on 400M (image, text) pairs, which is significantly large in both data size and compute. This repository aims to **scale down** those ideas for smaller personal projects using Flickr30k. We still follow the same core principle:
 
 1. Train an image encoder (ResNet-based) and text encoder (Linformer-based) to produce matching embeddings.
 2. Compute a contrastive loss on the NxN similarity matrix, pulling matched pairs together and pushing others apart.
@@ -174,8 +174,4 @@ We walked through each file step by step, asking important technical questions b
 - **More Data**: Incorporate larger or more diverse image-text sets.
 - **Alternative Efficient Transformers**: Try Performer, Reformer, or Big Bird in place of Linformer.
 - **Deployment**: Provide a small inference script to embed images/text and do retrieval.
-
-
-### Final Notes
-This mini-version is a stepping stone for researchers or hobbyists who want to experiment with CLIP’s ideas on smaller hardware and data. We carefully designed each module with relevant design choices—modern MLP blocks, dynamic temperature, SAM, and mixed precision—to provide a robust, practical demonstration of multi-modal contrastive learning.
 
