@@ -1,6 +1,6 @@
 # MiniCLIP: 
 
-This repository demonstrates the development of a miniature version of OpenAI's [CLIP](https://github.com/openai/CLIP) model, leveraging a smaller dataset (Flickr30k) and more moderate compute. This model was built with help from OPENAI's O3-mini. We incorporate several modern innovations, including:
+This repository demonstrates the development of a miniature version of OpenAI's [CLIP](https://github.com/openai/CLIP) model, leveraging a smaller dataset (Flickr30k) and more moderate compute. **This model was built with help from OPENAI's O3-mini.**. We incorporate several modern innovations, including:
 
 - **ResNet-34** image encoder, rather than a huge ResNet-50/101 or ViT.
 - **Linformer**-based text encoder with Byte-Pair Encoding (BPE) or Hugging Face tokenization.
