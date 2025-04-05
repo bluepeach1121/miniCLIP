@@ -10,10 +10,10 @@ This repository demonstrates the development of a miniature version of OpenAI's 
 - **Mixed-precision training** with PyTorch’s AMP.
 
 ## Table of Contents
-1. [Overview](#overview)
+1. [Overview](##overview)
 2. [Project Structure](#project-structure)
 3. [Key Differences from Original CLIP](#key-differences)
-4. [Implementation Steps and Q&A](#implementation-steps)
+4. [Implementation Steps](#implementation-steps)
 5. [Corrections and Iterations](#corrections)
 6. [How to Run](#how-to-run)
 7. [Future Work](#future-work)
